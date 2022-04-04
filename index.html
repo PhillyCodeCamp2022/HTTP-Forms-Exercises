@@ -10,6 +10,9 @@
             margin-bottom: 7px;
         }
     </style>
+    <!-- This linked the script.js file to this html document! -->
+    <script type="text/javascript" src="script.js"></script>
+
 </head>
 
 <body>
@@ -18,11 +21,11 @@
         <h2>Rocket Simulation</h2>
         <label>
             Test Name:
-            <input type="text" name="testName" autocomplete="off" />
+            <input type="text" name="testName" autocomplete="off" id="name" />
         </label>
         <label>
             Test Date:
-            <input type="date" name="testDate" />
+            <input type="date" name="testDate" id="date" />
         </label>
         <!-- Brant, Lynx, Orion, Terrier -->
         <label>
@@ -36,7 +39,7 @@
         </label>
         <label>
             Number of rocket boosters:
-            <input type="number" name="boosterCount" min="1" max="9" value="1" />
+            <input type="number" name="boosterCount" min="1" max="9" value="1" id="boosters" />
         </label>
         <!-- No Wind: with value 0, Mild: with value 10, Strong: with value 20 -->
         <label>
